@@ -1,0 +1,8 @@
+private static boolean isInteger(String str) { // Check if string is integer
+		try {
+			Integer.parseInt(str); // If this doesn't fail then it's integer
+			return true;
+		} catch (NumberFormatException e) {
+			return false; // Wasn't integer
+		}
+	}
