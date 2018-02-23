@@ -1,0 +1,10 @@
+static char[] sendOTP(int length){
+		//System.out.println("Genereating OTP.... : ");
+		String num = "0123456789";
+		Random r = new Random();
+		char[] otp = new char[length];
+		for(int i =0;i<length;i++){
+			otp[i] = num.charAt(r.nextInt(num.length()));
+		}
+		return otp;
+	}
